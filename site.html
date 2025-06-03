@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seleção Brasileira</title>
+  <style>
+    :root {
+      --verde: #009b3a;
+      --amarelo: #ffcc29;
+      --azul: #002776;
+      --branco: #ffffff;
+      --preto: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f1f1f1, #e6f9ec);
+      color: #111;
+    }
+
+    header {
+      background: var(--verde);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://s2-ge.glbimg.com/RWUmxUmtH66KJBlXqcoOFDGWa1g=/0x0:2048x1365/924x0/smart/filters:strip_icc():quality(70)/i.s3.glbimg.com/v1/AUTH_c1b94660f56c4038a1f4d4c3c5f90257/internal_photos/bs/2023/J/q/kJARZHTxqISizqGzXIBw/2023-06-20t230021z-1975547701-up1ej6k1w8nke-rtrmadp-3-soccer-friendly-bra-sen-report.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--verde);
+      margin-bottom: 40px;
+    }
+
+    .players {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .player {
+      background: var(--branco);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .player:hover {
+      transform: translateY(-6px);
+    }
+
+    .player img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .player-name {
+      padding: 10px;
+      font-weight: bold;
+      background: var(--amarelo);
+    }
+
+    .titles {
+      text-align: center;
+      font-size: 1.2em;
+      background: var(--azul);
+      color: white;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    .titles li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #e0ffe0;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background: var(--verde);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/pt/4/45/CBF2019.png" alt="CBF Logo">
+      <h3 style="margin-left: 10px;">Seleção Brasileira</h3>
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#elenco">Elenco</a>
+      <a href="#titulos">Títulos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="inicio">
+    <h1>Orgulho do Brasil 🇧🇷</h1>
+  </div>
+
+  <section id="elenco">
+    <h2>Craques do Brasil</h2>
+    <div class="players">
+      <div class="player">
+        <img src="https://s2-ge.glbimg.com/GtL4sWTevltm_OyzYQ57UByJp1g=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_8c7487b9c62d40349b88f7c5ecb0a55c/internal_photos/bs/2023/n/k/9TAPSwRCO1u3PVx4kh6g/vini.jpg" alt="Vini Jr">
+        <div class="player-name">Vini Jr - Atacante</div>
+      </div>
+      <div class="player">
+        <img src="https://s2-ge.glbimg.com/umNZU3GBMCVSk8n8euv_TlMGzDQ=/0x0:800x533/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_8c7487b9c62d40349b88f7c5ecb0a55c/internal_photos/bs/2023/w/g/kPaLa2TPiRLVbM6T7SAA/alisson.jpg" alt="Alisson">
+        <div class="player-name">Alisson - Goleiro</div>
+      </div>
+      <div class="player">
+        <img src="https://s2-ge.glbimg.com/zmQIdT0rRDP0zXBrmZqS1VMMO0c=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_8c7487b9c62d40349b88f7c5ecb0a55c/internal_photos/bs/2023/S/I/4RlUEZQzS4vRWoL9onAQ/rodrygo.jpg" alt="Rodrygo">
+        <div class="player-name">Rodrygo - Atacante</div>
+      </div>
+      <div class="player">
+        <img src="https://s2-ge.glbimg.com/ry2i6xvRUJHdEGejLLL9Q6FbyFc=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_8c7487b9c62d40349b88f7c5ecb0a55c/internal_photos/bs/2023/e/N/kxFXQwTnOc8Vv0tEv3Kw/paqueta.jpg" alt="Paquetá">
+        <div class="player-name">Lucas Paquetá - Meio</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="titulos">
+    <h2>Nossas Conquistas</h2>
+    <div class="titles">
+      <ul>
+        <li>🏆 5x Campeã do Mundo (1958, 1962, 1970, 1994, 2002)</li>
+        <li>🏆 9x Campeã da Copa América</li>
+        <li>🏆 4x Campeã da Copa das Confederações</li>
+        <li>🥇 Ouro Olímpico: 2016, 2020</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <div class="contact">
+      <form onsubmit="enviar(event)">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+        <p id="msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Seleção Brasileira — Criado com 🇧🇷 e paixão pelo futebol.
+  </footer>
+
+  <script>
+    function enviar(event) {
+      event.preventDefault();
+      document.getElementById('msg').innerText = "Obrigado! Sua mensagem foi enviada.";
+    }
+  </script>
+</body>
+</html>
+
+
+ 
+
